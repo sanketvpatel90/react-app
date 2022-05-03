@@ -1,0 +1,12 @@
+name: release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo a String
+        run: echo "Released a new version (Tag)"
